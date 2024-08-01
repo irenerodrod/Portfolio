@@ -1,7 +1,9 @@
 let currentIndex = 0;
 
 function moveCarousel(direction) {
-    const items = document.querySelectorAll('.carousel-item');
+    const carousel = document.querySelector('.carousel-wrapper');
+    const items = carousel.children;
+    const itemWidth = items[0].offsetWidth;
     currentIndex += direction;
 
     if (currentIndex < 0) {
@@ -10,9 +12,5 @@ function moveCarousel(direction) {
         currentIndex = 0;
     }
 
-    const wrapper = document.querySelector('.carousel-wrapper');
-    wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+    carousel.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
 }
-
-document.querySelector('.carousel-button.prev').addEventListener('click', () => moveCarousel(-1));
-document.querySelector('.carousel-button.next').addEventListener('click', () => moveCarousel(1));
