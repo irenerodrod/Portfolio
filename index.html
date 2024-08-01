@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías y lenguajes empleados</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -30,45 +31,89 @@
 
         <section id="sobre-mi" class="about">
             <div class="about-content">
-                <img src="media/profile.jpg" alt="Foto de Irene Rodríguez" class="profile-img">
-                <h2>Irene Rodríguez. Desarrolladora web autodidacta.</h2>
-                <p>¡Hola! Soy Irene Rodríguez, una desarrolladora web autodidacta. Apasionada por el mundo de la tecnología y el diseño. </p>
-                <p>Mi pasión siempre han sido el diseño y la tecnología, en ambos he sido autodidacta, pero lo que realmente me apasiona es poder juntar mis dos pasiones en una.</p>
-                <p>Actualmente estoy estudiando un CFGS DAW (Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web). Tengo conocimientos en HTML5, CSS, JavaScript y Python.</p>
-                <div class="social-links">
-                    <a href="https://github.com/irenerodrod" target="_blank"><img src="media/github.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"><img src="media/linkedin.png" alt="LinkedIn"></a>
+                <div class="profile-section">
+                    <img src="media/profile.jpg" alt="Foto de Irene Rodríguez" class="profile-img">
+                    <div class="social-links">
+                        <a href="https://github.com/irenerodrod" target="_blank"><img src="media/github.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"><img src="media/linkedin.png" alt="LinkedIn"></a>
+                    </div>
                 </div>
+                <div class="about-text">
+                    <h2>Irene Rodríguez. Desarrolladora web autodidacta.</h2>
+                    <p>¡Hola! Soy Irene Rodríguez, una desarrolladora web autodidacta. Apasionada por el mundo de la tecnología y el diseño. </p>
+                    <p>Mi pasión siempre han sido el diseño y la tecnología, en ambos he sido autodidacta, pero lo que realmente me apasiona es poder juntar mis dos pasiones en una.</p>
+                    <p>Actualmente estoy estudiando un CFGS DAW (Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web). Tengo conocimientos en HTML5, CSS, JavaScript y Python.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="technologies">
+            <h2>Tecnologías y lenguajes empleados</h2>
+            <div class="tech-used">
+                <img src="media/html5.png" alt="HTML5">
+                <img src="media/css3.png" alt="CSS3">
+                <img src="media/javascript.png" alt="JavaScript">
+                <img src="media/python.png" alt="Python">
             </div>
         </section>
 
         <section id="proyectos" class="projects">
-            <div>
-                <h2>Proyectos recientes</h2>
-                <ul>
-                    <li><a href="https://github.com/irenerodrod/Portfolio" target="_blank">Portfolio personal</a></li>
-                    <li><a href="https://github.com/irenerodrod/PassGen" target="_blank">Generador de contraseñas</a></li>
-                    <li><a href="https://github.com/irenerodrod/bluevialdo" target="_blank">Página web de mi sello discográfico</a></li>
-                </ul>
-                <div class="tech-images">
-                    <img src="media/html5.png" alt="HTML5">
-                    <img src="media/css3.png" alt="CSS3">
-                    <img src="media/javascript.png" alt="JavaScript">
-                    <img src="media/python.png" alt="Python">
+            <h2>Proyectos recientes</h2>
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-item">
+                        <img src="media/portfolio.jpg" alt="Portfolio personal">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodrod/Portfolio" target="_blank">Portfolio</a></h3>
+                            <p>Un portfolio personal que muestra mis proyectos y habilidades.</p>
+                            <div class="tech-used">
+                                <img src="media/html5.png" alt="HTML5">
+                                <img src="media/css3.png" alt="CSS3">
+                                <img src="media/javascript.png" alt="JavaScript">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/passgen.jpg" alt="Generador de contraseñas">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodrod/PassGen" target="_blank">PassGen</a></h3>
+                            <p>Una herramienta para generar contraseñas seguras.</p>
+                            <div class="tech-used">
+                                <img src="media/html5.png" alt="HTML5">
+                                <img src="media/css3.png" alt="CSS3">
+                                <img src="media/javascript.png" alt="JavaScript">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/bluevialdo.jpg" alt="Bluevialdo">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodrod/bluevialdo" target="_blank">Bluevialdo</a></h3>
+                            <p>Web de un sello discográfico.</p>
+                            <div class="tech-used">
+                                <img src="media/html5.png" alt="HTML5">
+                                <img src="media/css3.png" alt="CSS3">
+                                <img src="media/javascript.png" alt="JavaScript">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
             </div>
         </section>
 
         <section id="contacto" class="contact">
-            <div>
-                <h2>Contacto</h2>
-                <p>Si tienes alguna duda o quieres contactarme, no dudes en ponerte en contacto conmigo.</p>
-                <ul>
-                    <li><a href="mailto:rodrodirene3124@gmail.com">Correo electrónico</a></li>
-                    <li><a href="tel:+34609818876">Teléfono</a></li>
-                </ul>
-            </div>
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda o quieres contactarme, no dudes en ponerte en contacto conmigo.</p>
+            <ul>
+                <li><a href="mailto:rodrodirene3124@gmail.com">Correo electrónico</a></li>
+                <li><a href="tel:+34609818876">Teléfono</a></li>
+            </ul>
         </section>
+        
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
