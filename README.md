@@ -5,7 +5,7 @@
 - 🙋🏻‍♀️ - [Sobre mí](#Sobremi)
 - 👩🏻‍💻 - [Tecnologías empleadas](#Tecnologiasempleadas)
 - 📱 - [Contacto](#Contacto) 
-- 🆕 - [Modificaciones](#Modiciaciones)
+- 🆕 - [Modificaciones](#Modificaciones)
 ----
 # Sobre mí<a name="Sobremi"></a>
 Hola! Bienvenidos a mi portfolio. Aquí podréis encontrar un resumen de mis proyectos más recientes y las tecnologías empleadas.
