@@ -1,11 +1,11 @@
 # Portfolio personal - Irene Rodríguez
 ----
 # Indice<a name="Indice"></a>
-ℹ️ - [Indice](#Indice)
-🙋🏻‍♀️ - [Sobre mí](#Sobremi)
-👩🏻‍💻 - [Tecnologías empleadas](#Tecnologiasempleadas)
-📱 - [Contacto](#Contacto) 
-🆕 - [Modificaciones](#Modiciaciones)
+- ℹ️ - [Indice](#Indice)
+- 🙋🏻‍♀️ - [Sobre mí](#Sobremi)
+- 👩🏻‍💻 - [Tecnologías empleadas](#Tecnologiasempleadas)
+- 📱 - [Contacto](#Contacto) 
+- 🆕 - [Modificaciones](#Modiciaciones)
 ----
 # Sobre mí<a name="Sobremi"></a>
 Hola! Bienvenidos a mi portfolio. Aquí podréis encontrar un resumen de mis proyectos más recientes y las tecnologías empleadas.
@@ -20,7 +20,8 @@ Lenguajes empleados | Entornos de desarrollo empleados | Sistemas operativos
 
 ----
 # Contacto<a name="Contacto"></a>
-Correo electrónico<a href="mailto:rodrodirene3124@gmail.com"></a>
+- [Correo electrónico](mailto:rodrodirene3124@gmail.com)
+- [Teléfono](tel:+34609818876)
 ----
 
 # Modificaciones<a name="Modificaciones"></a>
