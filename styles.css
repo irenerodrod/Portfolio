@@ -134,6 +134,13 @@ section {
     margin-top: 0;
 }
 
+.estudiosFormaciones {
+    background-color: #caf3e7;
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+}
+
 .technologies {
     background-color: #e3f2fd;
     padding: 2rem;
