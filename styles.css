@@ -256,7 +256,7 @@ section {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #f7f7f7;
+    color: #000000;
 }
 
 .carousel-button.prev {
