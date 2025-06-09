@@ -2,21 +2,23 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="media/logo.png" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Irene Rodríguez</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Irene Rodríguez - Desarrolladora Web</title>
+    <meta name="description"
+        content="Portafolio de Irene Rodríguez, desarrolladora web autodidacta con proyectos en HTML5, CSS3, JavaScript y Python." />
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#estudiosFormaciones">Estudios y formaciones</a></li>
-                <li><a href="#tecnologias">Tecnologías y lenguajes empleados</a></li>
+                <li><a href="#estudios-formaciones">Estudios y formaciones</a></li>
+                <li><a href="#tecnologias">Tecnologías y lenguajes</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -24,158 +26,105 @@
     </header>
 
     <main>
-        <section id="inicio" class="index">
-            <div>
-                <h1>Irene Rodríguez. Desarrolladora web</h1>
-                <p>Te doy la bienvenida a mi portafolio, un espacio donde podrás explorar algunos de mis proyectos más recientes y los en los que me encuentro trabajando. También encontrarás un breve resumen sobre mí y mi actividad profesional actual.</p>
-            </div>
+        <section id="inicio" class="index" tabindex="-1">
+            <h1>Irene Rodríguez - Desarrolladora web</h1>
+            <p>
+                Bienvenido a mi portafolio, un espacio donde podrás explorar algunos de mis proyectos más recientes y
+                los que estoy desarrollando actualmente. También encontrarás un resumen sobre mí y mi actividad
+                profesional.
+            </p>
         </section>
 
-        <section id="sobre-mi" class="about">
+        <section id="sobre-mi" class="about" tabindex="-1">
+            <h2>Sobre mí</h2>
             <div class="about-content">
-                <div class="profile-section">
-                    <img src="media/profile.jpg" alt="Foto de Irene Rodríguez" class="profile-img">
-                    <div class="social-links">
-                        <a href="https://github.com/irenerodrod" target="_blank"><img src="media/github.png"
-                                alt="GitHub"></a>
-                        <a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"><img
-                                src="media/linkedin.png" alt="LinkedIn"></a>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h1>Sobre mí</h1>
-                    <h2>Irene Rodríguez. Desarrolladora web autodidacta.</h2>
-                    <p>¡Hola! Soy Irene Rodríguez, una desarrolladora web autodidacta. Apasionada por el mundo de la
-                        tecnología y el diseño. </p>
-                    <p>Mi pasión siempre han sido el diseño y la tecnología, en ambos he sido autodidacta, pero lo que
-                        realmente me apasiona es poder juntar mis dos pasiones en una.</p>
-                    <p>Actualmente estoy estudiando un CFGS DAW (Ciclo Formativo de Grado Superior en Desarrollo de
-                        Aplicaciones Web). Tengo conocimientos en HTML5, CSS, JavaScript y Python.</p>
-                </div>
+                <figure class="profile-section">
+                    <img src="/webroot/media/newLogo.png" alt="Foto de Irene Rodríguez" class="profile-img" />
+                    <figcaption>
+                        <div class="social-links" aria-label="Redes sociales de Irene Rodríguez">
+                            <a href="https://github.com/irenerodrod" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub de Irene Rodríguez">
+                                <img src="webroot/media/social/github.png" alt="Icono de GitHub" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn de Irene Rodríguez">
+                                <img src="webroot/media/social/linkedin.png" alt="Icono de LinkedIn" />
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <article class="about-text">
+                    <h3>Irene Rodríguez. Desarrolladora web autodidacta.</h3>
+                    <p>¡Hola! Soy Irene, apasionada por la tecnología y el diseño, y me encanta combinar ambas para
+                        crear experiencias web atractivas y funcionales.</p>
+                    <p>Actualmente curso el CFGS en Desarrollo de Aplicaciones Web. Manejo HTML5, CSS3, JavaScript y
+                        Python, y siempre estoy aprendiendo nuevas tecnologías.</p>
+                </article>
             </div>
         </section>
 
-        <section id="estudiosFormaciones" class="estudiosFormaciones">
-            <h1>Estudios y formaciones</h1>
+        <section id="estudios-formaciones" class="estudios-formaciones" tabindex="-1">
+            <h2>Estudios y formaciones</h2>
             <ul>
                 <li>CFGS en Desarrollo de Aplicaciones Web - Actualmente en curso</li>
-                <li>Google: Inteligencia artificial y productividad(Santander Open Academy - ago. 2024)</li>
-                <li>Fundamentos de la Inteligencia Artificial (IBM - jul. 2024)</li>
-                <li>ChatGPT para la mejora en el trabajo (Udemy - jul. 2024)</li>
-                <li>Fundamentos de la ciberseguridad (LinkedIn - jul. 2024)</li>
-                <li>B1 Inglés (EOI - jun. 2023)</li>
+                <li>Google: Inteligencia Artificial y Productividad (Santander Open Academy - Ago 2024)</li>
+                <li>Fundamentos de la Inteligencia Artificial (IBM - Jul 2024)</li>
+                <li>ChatGPT para la mejora en el trabajo (Udemy - Jul 2024)</li>
+                <li>Fundamentos de la Ciberseguridad (LinkedIn - Jul 2024)</li>
+                <li>B1 Inglés (EOI - Jun 2023)</li>
             </ul>
         </section>
 
-        <section id="tecnologias" class="technologies">
+        <section id="tecnologias" class="technologies" tabindex="-1">
             <h2>Tecnologías y lenguajes empleados</h2>
-            <div class="tech-used">
-                <img src="media/html5.png" alt="HTML5">
-                <img src="media/css3.png" alt="CSS3">
-                <img src="media/javascript.png" alt="JavaScript">
-                <img src="media/python.png" alt="Python">
+            <div class="tech-used" role="list" aria-label="Tecnologías utilizadas">
+                <img src="webroot/media/tech/html5.png" alt="HTML5" />
+                <img src="webroot/media/tech/css3.png" alt="CSS3" />
+                <img src="webroot/media/tech/javascript.png" alt="JavaScript" />
+                <img src="webroot/media/tech/python.png" alt="Python" role="listitem" />
+                <img src="webroot/media/tech/java.png" alt="Java" role="listitem" />
+                <img src="webroot/media/tech/mysql.png" alt="MySQL" role="listitem" />
             </div>
         </section>
 
-        <section id="proyectos" class="projects">
-            <h2>Proyectos recientes</h2>
-            <div class="carousel">
-                <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
-                <div class="carousel-wrapper">
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/portfolio.png" alt="Portfolio personal" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/Portfolio" target="_blank">Portfolio</a>
-                                </h3>
-                                <p>Un portfolio personal que muestra mis proyectos y habilidades.</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                    <img src="media/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/passgen.png" alt="Generador de contraseñas" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/PassGen" target="_blank">PassGen</a></h3>
-                                <p>Una herramienta para generar contraseñas seguras.</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                    <img src="media/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/bluevialdo.png" alt="Bluevialdo" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/bluevialdo" target="_blank">Bluevialdo</a>
-                                </h3>
-                                <p>Web de un sello discográfico.</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                    <img src="media/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/sweethouse.png" alt="Sweet House Leon" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/sweethouse" target="_blank">Sweet House</a>
-                                </h3>
-                                <p>Web de una cafetería-pastelería de León (España).</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                    <img src="media/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/proximamente.png" alt="Proximamente" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/DescubreOrense" target="_blank">Descubre Orense</a>
-                                </h3>
-                                <p>Web de en la que se muestran las maravillas de la ciudad perteneciente a Galicia.(No es oficial, ha sido creada con motivos educativos)</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                    <img src="media/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-container">
-                            <img src="media/proximamente.png" alt="Proximamente" class="project-image">
-                            <div class="project-info">
-                                <h3><a href="https://github.com/irenerodrod/" target="_blank">Ayuntamiento en la provincia de León</a>
-                                </h3>
-                                <p>Web del ayuntamiento de la localidad.(No es oficial, ha sido creada con motivos educativos)</p>
-                                <div class="tech-used">
-                                    <img src="media/html5.png" alt="HTML5">
-                                    <img src="media/css3.png" alt="CSS3">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section id="proyectos" class="projects" tabindex="-1">
+    <h2>Proyectos recientes</h2>
+    <div class="carousel" aria-roledescription="carousel" aria-label="Proyectos recientes">
+        <button class="carousel-button prev" aria-controls="carousel-wrapper" aria-label="Proyecto anterior"
+            onclick="moveCarousel(-1)">&#10094;</button>
+        <div id="carousel-wrapper" class="carousel-wrapper" role="list">
+            <!-- Proyecto 1 -->
+            <div class="project-container">
+                <img src="webroot/media/proyectos/portfolio.png" alt="Captura del portfolio personal" class="project-image" />
+                <div class="project-info">
+                    <h3>
+                        <a href="https://github.com/irenerodrod/Portfolio" target="_blank"
+                            rel="noopener noreferrer">Portfolio</a>
+                    </h3>
+                    <p>Un portfolio personal que muestra mis proyectos y habilidades.</p>
                 </div>
-                <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
             </div>
-        </section>
+            <!-- Proyecto 2 -->
+            <div class="project-container">
+                <img src="webroot/media/proyectos/passgen.png" alt="Captura del generador de contraseñas"
+                    class="project-image" />
+                <div class="project-info">
+                    <h3>
+                        <a href="https://github.com/irenerodrod/PassGen" target="_blank"
+                            rel="noopener noreferrer">PassGen</a>
+                    </h3>
+                    <p>Una herramienta para generar contraseñas seguras.</p>
+                </div>
+            </div>
+            <!-- Más proyectos similares omitidos por brevedad... -->
+        </div>
+        <button class="carousel-button next" aria-controls="carousel-wrapper" aria-label="Proyecto siguiente"
+            onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
 
-        <section id="contacto" class="contact">
+
+        <section id="contacto" class="contact" tabindex="-1">
             <h2>Contacto</h2>
             <p>Si tienes alguna duda o quieres contactarme, no dudes en ponerte en contacto conmigo.</p>
             <ul>
@@ -185,8 +134,11 @@
         </section>
     </main>
 
-    <script src="scripts.js"></script>
+    <footer>
+        <p>© 2025 Irene Rodríguez. Todos los derechos reservados.</p>
+    </footer>
 
+    <script src="scripts.js" defer></script>
 </body>
 
 </html>

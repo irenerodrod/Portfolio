@@ -1,313 +1,211 @@
-/* Tipografías empleadas - Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* Tipografías - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
+    background-color: #f8fafc;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fefeff;
-    color: #333;
 }
 
+/* Encabezado */
 header {
-    background-color: #002b36;
-    padding: 1rem;
+    background-color: #2563eb;
+    padding: 10px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #61dafb;
+header nav ul li a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
 }
 
-nav ul li a:hover {
-    background-color: #005f73;
-    color: #fff;
-}
-
-main {
-    padding: 2rem;
-}
-
+/* Secciones */
 section {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.index {
-    text-align: center;
-    padding: 2rem;
-    background-color: #e0f7fa;
-    border-radius: 8px;
-}
-
-.index h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.index p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.about {
-    background-color: #fce4ec;
-    padding: 2rem;
-    border-radius: 8px;
-    position: relative;
-}
-
+/* Sobre mí */
 .about-content {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .profile-section {
-    position: relative;
+    flex: 0 0 auto; /* La imagen mantiene un tamaño fijo */
+    max-width: 150px;
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    display: block;
-}
-
-.social-links {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-}
-
-.social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.social-links img {
-    width: 20px;
-    height: 20px;
-}
-
-.social-links a:hover {
-    background-color: #61dafb;
-    transform: scale(1.1);
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
-    max-width: 600px;
+    flex: 1; /* El texto ocupa el resto del espacio disponible */
+    text-align: left;
 }
 
-.about h1,
-.about h2 {
-    margin-top: 0;
-}
-
-.estudiosFormaciones {
-    background-color: #caf3e7;
-    padding: 2rem;
-    border-radius: 8px;
-    position: relative;
-}
-
+/* Tecnologías y lenguajes */
 .technologies {
-    background-color: #e3f2fd;
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.technologies h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.tech-used {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column; /* Título arriba y tecnologías debajo */
+    gap: 10px;
 }
 
-.tech-used img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
+.technologies h2,
+.technologies p {
+    margin: 0 0 10px 0;
+    text-align: left;
 }
 
-.tech-used img:hover {
-    transform: scale(1.2);
+.technologies .tech-used {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes bajen a otra fila si es necesario */
+    gap: 10px;
+    justify-content: flex-start;
 }
 
+.technologies .tech-used img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Contenedor principal de proyectos */
 .projects {
-    background-color: #fff3e0;
-    padding: 2rem;
-    border-radius: 8px;
+    display: flex; /* Cambiar a flex para mostrar en línea */
+    flex-direction: column; /* Mantener la dirección de la columna para el título */
+    gap: 20px; /* Espacio entre el título y el contenedor de proyectos */
 }
 
-.projects h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
+/* Contenedor del carrusel */
 .carousel {
-    display: flex;
-    align-items: center;
+    display: flex; /* Mostrar el carrusel en línea */
+    align-items: center; /* Alinear verticalmente los elementos */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    gap: 20px; /* Espacio entre proyectos */
 }
 
-.carousel-wrapper {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
+/* Contenedor principal de proyectos */
+.projects {
+    display: flex; /* Cambiar a flex para mostrar en línea */
+    flex-direction: column; /* Mantener la dirección de la columna para el título */
+    gap: 20px; /* Espacio entre el título y el contenedor de proyectos */
 }
 
-.carousel-item {
-    flex: 0 0 300px;
-    position: relative;
-    scroll-snap-align: start;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+/* Contenedor del carrusel */
+.carousel {
+    display: flex; /* Mostrar el carrusel en línea */
+    align-items: center; /* Alinear verticalmente los elementos */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    gap: 20px; /* Espacio entre proyectos */
 }
 
+/* Estilo individual de cada proyecto */
 .project-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    transition: filter 0.3s ease;
-}
-
-.project-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    flex: 0 0 auto; /* Permitir que el ancho se ajuste automáticamente */
+    width: 280px; /* Fijar el ancho de cada proyecto */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    padding: 1rem;
-    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-info h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.project-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.project-info p {
-    margin: 0;
-    margin-bottom: 0.5rem;
+/* Imagen del proyecto */
+.project-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.project-info .tech-used {
-    display: flex;
-    gap: 0.5rem;
+.project-image:hover {
+    transform: scale(1.05);
 }
 
-.project-container:hover .project-image {
-    filter: blur(4px);
-}
-
-.project-container:hover .project-info {
-    opacity: 1;
-}
-
+/* Botones del carrusel */
 .carousel-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #000000;
+    background-color: #2563eb; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
-.carousel-button.prev {
-    margin-right: 1rem;
+.carousel-button:hover {
+    background-color: #1d4ed8; /* Color de fondo al pasar el mouse */
 }
 
-.carousel-button.next {
-    margin-left: 1rem;
+/* Redes sociales */
+.social-links {
+    display: flex;
+    gap: 10px;
 }
 
-.contact {
-    background-color: #f1f8e9;
-    padding: 2rem;
-    border-radius: 8px;
+.social-links a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+    transform: scale(1.1);
+}
+
+/* Pie de página */
+footer {
+    background-color: #2563eb;
+    color: white;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.contact ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact ul li {
-    margin: 0.5rem 0;
-}
-
-.contact ul li a {
-    text-decoration: none;
-    color: #00695c;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact ul li a:hover {
-    color: #004d40;
+    padding: 10px;
 }
