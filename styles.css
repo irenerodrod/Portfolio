@@ -39,11 +39,67 @@ header nav ul li a {
 /* Secciones */
 section {
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
 }
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-section {
+    position: relative;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+}
+
+.social-links {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-links a:hover {
+    background-color: #61dafb;
+    transform: scale(1.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about h1,
+.about h2 {
+    margin-top: 0;
+}
+
 
 /* Sobre mí */
 .about-content {
@@ -73,77 +129,71 @@ section {
 /* Tecnologías y lenguajes */
 .technologies {
     display: flex;
-    flex-direction: column; /* Título arriba y tecnologías debajo */
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
 }
 
-.technologies h2,
-.technologies p {
-    margin: 0 0 10px 0;
-    text-align: left;
+.technologies h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: center;
 }
 
-.technologies .tech-used {
+.tech-used {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes bajen a otra fila si es necesario */
-    gap: 10px;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
 
-.technologies .tech-used img {
-    width: 60px;
-    height: 60px;
+.tech-used img {
+    width: 70px;
+    height: 70px;
     object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-/* Contenedor principal de proyectos */
+.tech-used img:hover {
+    transform: scale(1.1);
+}
+
+.estudios-formaciones{
+    margin-left: 20px;
+}
+
+/* Sección de proyectos */
 .projects {
-    display: flex; /* Cambiar a flex para mostrar en línea */
-    flex-direction: column; /* Mantener la dirección de la columna para el título */
-    gap: 20px; /* Espacio entre el título y el contenedor de proyectos */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Contenedor del carrusel */
-.carousel {
-    display: flex; /* Mostrar el carrusel en línea */
-    align-items: center; /* Alinear verticalmente los elementos */
-    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
-    gap: 20px; /* Espacio entre proyectos */
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
 }
 
-/* Contenedor principal de proyectos */
-.projects {
-    display: flex; /* Cambiar a flex para mostrar en línea */
-    flex-direction: column; /* Mantener la dirección de la columna para el título */
-    gap: 20px; /* Espacio entre el título y el contenedor de proyectos */
+/* Contenedor de proyectos en formato grid */
+.project-grid {
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* Contenedor del carrusel */
-.carousel {
-    display: flex; /* Mostrar el carrusel en línea */
-    align-items: center; /* Alinear verticalmente los elementos */
-    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
-    gap: 20px; /* Espacio entre proyectos */
-}
-
-/* Estilo individual de cada proyecto */
+/* Estilos individuales de los proyectos */
 .project-container {
-    flex: 0 0 auto; /* Permitir que el ancho se ajuste automáticamente */
-    width: 280px; /* Fijar el ancho de cada proyecto */
     background: white;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Imagen del proyecto */
@@ -160,50 +210,58 @@ section {
     transform: scale(1.05);
 }
 
-/* Botones del carrusel */
-.carousel-button {
-    background-color: #2563eb; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+.project-info h3 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.carousel-button:hover {
-    background-color: #1d4ed8; /* Color de fondo al pasar el mouse */
+.project-info p {
+    font-size: 1rem;
 }
 
-/* Redes sociales */
-.social-links {
+/* Sección de contacto centrada */
+.contact {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.social-links a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #e0e0e0;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.contact ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.social-links a img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.contact ul li a:hover {
+    color: #1d4ed8;
 }
 
-.social-links a:hover {
-    background-color: #2563eb;
-    transform: scale(1.1);
-}
 
 /* Pie de página */
-footer {
+footer p {
     background-color: #2563eb;
     color: white;
     text-align: center;
