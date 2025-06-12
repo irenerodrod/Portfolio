@@ -1,28 +1,35 @@
 # Portfolio personal - Irene Rodríguez
-----
-# Indice<a name="Indice"></a>
-- ℹ️ - [Indice](#Indice)
-- 🙋🏻‍♀️ - [Sobre mí](#Sobremi)
-- 👩🏻‍💻 - [Tecnologías empleadas](#Tecnologiasempleadas)
-- 📱 - [Contacto](#Contacto) 
-- 🆕 - [Modificaciones](#Modificaciones)
-----
-# Sobre mí<a name="Sobremi"></a>
+
+## 💁🏻‍♀️ Sobre mí
 Hola! Bienvenidos a mi portfolio. Aquí podréis encontrar un resumen de mis proyectos más recientes y las tecnologías empleadas.
-----
-# Tecnologías empleadas<a name="Sobremi"></a>
-Lenguajes empleados | Entornos de desarrollo empleados | Sistemas operativos
-| :---: | :---: | :---: |
-| <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML5"> | <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="Visual Studio Code">  | <img src="https://img.icons8.com/?size=100&id=M9BRw0RJZXKi&format=png&color=000000" alt="Windows 11">
-| <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS3"> |<img src="https://img.icons8.com/?size=100&id=67169&format=png&color=000000" alt="Notepad++"> | <img src="https://img.icons8.com/?size=100&id=101665&format=png&color=000000" alt="Kali Linux">
-| <img src="https://img.icons8.com/?size=100&id=Pd2x9GWu9ovX&format=png&color=000000" alt="JavaScript"> | <img src="https://img.icons8.com/?size=100&id=4djt356tq8UO&format=png&color=000000" alt="Apache Netbeans">
-| <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="python"> |
 
 ----
-# Contacto<a name="Contacto"></a>
+## 🛠️ Tecnologías empleadas
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,js,html,css,mysql,postgres,php,git,docker,linux,windows" height="50" alt="Tecnologías" />
+</div>
+
+----
+## Proyectos reciente
+<div align="left"><a href="https://github.com/irenerodriguezrod/116LMSGIProyectoLMSGI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=irenerodriguezrod&repo=116LMSGIProyectoLMSGI"></a>
+</div>
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=irenerodriguezrod&repo=116LMSGIProyectoDAW)](https://github.com/irenerodriguezrod/116LMSGIProyectoDAW)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=irenerodrod&repo=sweethouse)](https://github.com/irenerodrod/sweethouse)
+
+----
+## 📩 Contacto
 - [Correo electrónico](mailto:rodrodirene3124@gmail.com)
 - [Teléfono](tel:+34609818876)
 ----
 
-# Modificaciones<a name="Modificaciones"></a>
-**Primera modificación** - 03 de agosto de 2024
+## Modificaciones<a name="Modificaciones"></a>
+* **Primera modificación** - 03 de agosto de 2024
+  * Primera versión del portfolio
+  * Realizada con HTML5, CSS3, JavaScript
+  * Se desarrolló entre el 3 de agosto de 2024 y el 8 de agosto de 2024 
+* **Segunda versión** - 10 de junio de 2025
+  * Cambio de estética visual de la web, se ha modificado el CSS para hacerlo más cómodo a nivel visual
+  * Mejoradas las redes sociales y el contacto(LinkedIn y GitHub)
