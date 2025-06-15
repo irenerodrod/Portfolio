@@ -11,7 +11,9 @@
         content="Portafolio de Irene Rodríguez, desarrolladora web autodidacta con proyectos en HTML5, CSS3, JavaScript y Python." />
     <!-- estadísticas para vercel (analytics)-->
     <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        window.va = window.va || function () {
+            (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 
@@ -27,364 +29,240 @@
 
 <body>
     <header>
-        <nav aria-label="Menú principal">
+        <div class="header-left">
+            <h2 class="titulo">Irene Rodríguez. Desarrolladora web autodidacta.</h2>
+        </div>
+        <nav aria-label="Menú principal" class="header-right">
             <ul>
-                <li><a href="https://github.com/irenerodrod/Portfolio">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/">LinkedIn</a></li>
-                <li><a href="https://instagram.com/cuentadeire">Instagram</a></li>
-
+                <li><a href="https://github.com/irenerodriguezrod/" target="_blank"><img
+                            src="/webroot/media/social/github.png" alt="github"></a></li>
+                <li><a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"><img
+                            src="/webroot/media/social/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://instagram.com/cuentadeire" target="_blank"><img
+                            src="/webroot/media/social/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://tiktok.com/@cuentadeiree" target="_blank"><img
+                            src="/webroot/media/social/tik-tok.png" alt="TikTok"></a></li>
+                <li><a href="https://wa.me/+34609818876" target="_blank"><img src="/webroot/media/social/whatsapp.png"
+                            alt="Whatsapp"></a></li>
+                <li><a href="https://x.com/cuentadeire" target="_blank"><img src="/webroot/media/social/x.png"
+                            alt="X"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="sobre-mi" class="about">
-            <div class="about-content">
-                <div class="profile-section">
-                    <img src="/webroot/media/newLogo.png" alt="Logo de Irene Rodríguez" class="profile-img">
-                    <div class="social-links">
-                        <a href="https://github.com/irenerodrod" target="_blank"><img
-                                src="/webroot/media/social/github.png" alt="GitHub"></a>
-                        <a href="https://www.linkedin.com/in/irene-rodriguezrodriguez/" target="_blank"><img
-                                src="/webroot/media/social/linkedin.png" alt="LinkedIn"></a>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h1>Sobre mí</h1>
-                    <h2>Irene Rodríguez. Desarrolladora web autodidacta.</h2>
-                    <p>¡Hola! Soy Irene Rodríguez, una desarrolladora web autodidacta. Apasionada por el mundo de la
-                        tecnología y el diseño. </p>
-                    <p>Mi pasión siempre han sido el diseño y la tecnología, en ambos he sido autodidacta, pero lo que
-                        realmente me apasiona es poder juntar mis dos pasiones en una.</p>
-                    <p>Actualmente estoy estudiando un CFGS DAW (Ciclo Formativo de Grado Superior en Desarrollo de
-                        Aplicaciones Web). Tengo conocimientos en HTML5, CSS, JavaScript y Python.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="estudios-formaciones" class="estudios-formaciones" tabindex="-1">
-            <h2>Estudios y formaciones</h2>
-            <ul>
-                <li>CFGS en Desarrollo de Aplicaciones Web - Actualmente en curso</li>
-                <li>Google: Inteligencia Artificial y Productividad (Santander Open Academy - Ago 2024)</li>
-                <li>Fundamentos de la Inteligencia Artificial (IBM - Jul 2024)</li>
-                <li>ChatGPT para la mejora en el trabajo (Udemy - Jul 2024)</li>
-                <li>Fundamentos de la Ciberseguridad (LinkedIn - Jul 2024)</li>
-                <li>B1 Inglés (EOI - Jun 2023)</li>
-            </ul>
-        </section>
-
-        <!-- 
-        <section id="tecnologias" class="technologies" tabindex="-1">
-            <h2>Tecnologías y lenguajes empleados</h2>
-            <div class="tech-used" role="list" aria-label="Tecnologías utilizadas">
-                <img src="webroot/media/tech/html5.png" alt="HTML5" />
-                <img src="webroot/media/tech/css3.png" alt="CSS3" />
-                <img src="webroot/media/tech/javascript.png" alt="JavaScript" />
-                <img src="webroot/media/tech/python.png" alt="Python" role="listitem" />
-                <img src="webroot/media/tech/java.png" alt="Java" role="listitem" />
-                <img src="webroot/media/tech/mysql.png" alt="MySQL" role="listitem" />
-            </div>
-        </section>
-        -->
-        <!-- 
-        <div id="habilidades" class="relative z-6 my-12 lg:my-24 border-[#25213b]">
-            <div class="flex justify-center my-5 lg:py-8">
-                <div class="flex items-center">
-                    <span class="w-24 h-[2px] bg-[#1a1443]"></span>
-                    <span class="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">Habilidades</span><span
-                        class="w-24 h-[2px] bg-[#1a1443]"></span>
-                </div>
-            </div>
-            <div class="my-12">
-                <div class="rfm-marquee-container "
-                    style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;">
-                    <div class="rfm-marquee"
-                        style="--play: running; --direction: normal; --duration: 22.5s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
-                        <div class="rfm-initial-child-container">
-                            
-                            <div class="rfm-child" style="--transform: none;">
-                                <div
-                                    class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                    <div
-                                        class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                        <div class="flex -translate-y-[1px] justify-center">
-                                            <div class="w-3/4">
-                                                <div
-                                                    class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                            <div class="h-12 sm:h-10"><img src="assets/skills/mysql.png" alt="MySQL"
-                                                    width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                            <p class="text-white text-sm sm:text-lg">MySQL</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div class="rfm-child" style="--transform: none;">
-                                <div
-                                    class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                    <div
-                                        class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                        <div class="flex -translate-y-[1px] justify-center">
-                                            <div class="w-3/4">
-                                                <div
-                                                    class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                            <div class="h-12 sm:h-10"><img src="assets/skills/html5.png" alt="HTML"
-                                                    width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                            <p class="text-white text-sm sm:text-lg">HTML</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rfm-child" style="--transform: none;">
-                                <div
-                                    class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                    <div
-                                        class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                        <div class="flex -translate-y-[1px] justify-center">
-                                            <div class="w-3/4">
-                                                <div
-                                                    class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                            <div class="h-12 sm:h-10"><img src="assets/skills/css3.png" alt="CSS"
-                                                    width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                            <p class="text-white text-sm sm:text-lg">CSS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rfm-child" style="--transform: none;">
-                                <div
-                                    class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                    <div
-                                        class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                        <div class="flex -translate-y-[1px] justify-center">
-                                            <div class="w-3/4">
-                                                <div
-                                                    class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                            <div class="h-12 sm:h-10"><img src="assets/skills/js.png" alt="Javascript"
-                                                    width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                            <p class="text-white text-sm sm:text-lg">Javascript</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+        <div class="container">
+            <section id="sobre-mi" class="about">
+                <div class="about-content">
+                    <div class="profile-section">
+                        <img src="/webroot/media/newLogo.png" alt="Logo de Irene Rodríguez" class="profile-img">
+                        <div class="social-links">
+                            <a href="tel:+34609818876" target="_blank"><img
+                                    src="/webroot/media/contacto/llamar.png" alt="Teléfono"></a>
+                            <a href="mailto:cuentadeire@gmail.com" target="_blank"><img
+                                    src="/webroot/media/contacto/correo-electronico.png" alt="Correo"></a>
+                            <a href="/webroot/doc/IreneRodriguezR_CurriculumVitae.pdf" target="_blank"><img
+                                    src="/webroot/media/contacto/curriculum-vitae.png" alt="CV"></a>
+                            <a href="/webroot/feed/rss.xml" target="_blank"><img src="/webroot/media/social/rss.png" alt="RSS"></a>
                         </div>
                     </div>
-                    <div class="rfm-marquee"
-                        style="--play: running; --direction: normal; --duration: 22.5s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
-                        
-                        <div class="rfm-child" style="--transform: none;">
-                            <div
-                                class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                <div
-                                    class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                    <div class="flex -translate-y-[1px] justify-center">
-                                        <div class="w-3/4">
-                                            <div
-                                                class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                        <div class="h-12 sm:h-10"><img src="assets/skills/mysql.png" alt="MySQL"
-                                                width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                        <p class="text-white text-sm sm:text-lg">MySQL</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="about-text">
+                        <h1>Sobre mí</h1>
+
+                        <p>¡Hola! Soy Irene Rodríguez, una desarrolladora web autodidacta. Apasionada por el mundo de la
+                            tecnología y el diseño. </p>
+                        <p>Mi pasión siempre han sido el diseño y la tecnología, en ambos he sido autodidacta, pero lo
+                            que
+                            realmente me apasiona es poder juntar mis dos pasiones en una.</p>
+                        <p>Actualmente estoy estudiando un CFGS DAW (Ciclo Formativo de Grado Superior en Desarrollo de
+                            Aplicaciones Web). Tengo conocimientos en HTML5, CSS, JavaScript, Python y Java.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="estudios-formaciones" class="estudios-formaciones" tabindex="-1">
+                <h2>Estudios y formaciones</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estudio / Formación</th>
+                            <th>Certificado / Institución</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Estudio / Formación">CFGS en Desarrollo de Aplicaciones Web</td>
+                            <td data-label="Certificado / Institución">Actualmente en curso</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Estudio / Formación">Inteligencia Artificial y Productividad</td>
+                            <td data-label="Certificado / Institución">Google (Santander Open Academy - Ago 2024)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Estudio / Formación">Fundamentos de la Inteligencia Artificial</td>
+                            <td data-label="Certificado / Institución">IBM (Jul 2024)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Estudio / Formación">ChatGPT para la mejora en el trabajo</td>
+                            <td data-label="Certificado / Institución">Udemy (Jul 2024)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Estudio / Formación">Fundamentos de la Ciberseguridad</td>
+                            <td data-label="Certificado / Institución">LinkedIn (Jul 2024)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Estudio / Formación">B1 Inglés</td>
+                            <td data-label="Certificado / Institución">EOI (Jun 2023)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="tecnologiaHerramientas">
+                <h2>Tecnologías y herramientas utilizadas</h2>
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/css3.png" height="100" width="250" alt="CSS3">
                         </div>
-                        
-                        <div class="rfm-child" style="--transform: none;">
-                            <div
-                                class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                <div
-                                    class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                    <div class="flex -translate-y-[1px] justify-center">
-                                        <div class="w-3/4">
-                                            <div
-                                                class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                        <div class="h-12 sm:h-10"><img src="assets/skills/html5.png" alt="HTML"
-                                                width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                        <p class="text-white text-sm sm:text-lg">HTML</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/git.png" height="100" width="250" alt="Git">
                         </div>
-                        <div class="rfm-child" style="--transform: none;">
-                            <div
-                                class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                <div
-                                    class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                    <div class="flex -translate-y-[1px] justify-center">
-                                        <div class="w-3/4">
-                                            <div
-                                                class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                        <div class="h-12 sm:h-10"><img src="assets/skills/css3.png" alt="CSS" width="50"
-                                                height="50" class="h-full w-auto rounded-lg"></div>
-                                        <p class="text-white text-sm sm:text-lg">CSS</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/html5.png" height="100" width="250" alt="HTML5">
                         </div>
-                        <div class="rfm-child" style="--transform: none;">
-                            <div
-                                class="w-40 rounded-full bg-gradient-to-r from-[#7928ca] to-[#ff0080] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer">
-                                <div
-                                    class="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                                    <div class="flex -translate-y-[1px] justify-center">
-                                        <div class="w-3/4">
-                                            <div
-                                                class="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col items-center justify-center gap-3 p-6">
-                                        <div class="h-12 sm:h-10"><img src="assets/skills/js.png" alt="Javascript"
-                                                width="50" height="50" class="h-full w-auto rounded-lg"></div>
-                                        <p class="text-white text-sm sm:text-lg">Javascript</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/java.png" height="100" width="250" alt="Java">
                         </div>
-                        
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/javascript.png" height="100" width="250"
+                                alt="JavaScript">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/mysql.png" height="100" width="250" alt="MySQL">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/postgre.png" height="100" width="250" alt="PostgreSQL">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/python.png" height="100" width="250" alt="Python">
+                        </div>
+
+                        <!--copia para el bucle-->
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/css3.png" height="100" width="250" alt="CSS3">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/git.png" height="100" width="250" alt="Git">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/html5.png" height="100" width="250" alt="HTML5">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/java.png" height="100" width="250" alt="Java">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/javascript.png" height="100" width="250"
+                                alt="JavaScript">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/mysql.png" height="100" width="250" alt="MySQL">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/postgre.png" height="100" width="250" alt="PostgreSQL">
+                        </div>
+                        <div class="slide">
+                            <img src="/webroot/media/tech/skills/python.png" height="100" width="250" alt="Python">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        -->
-        <section id="tecnologiaHerramientas">
-            <div class="carousel-container">
-                <h2>Tecnologías</h2>
-                <div class="carousel carousel-left">
-                    <!-- Bloque 1 -->
-                    <div class="item"><img src="/webroot/media/tech/skills/css3.png" alt="CSS"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/html5.png" alt="HTML"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/java.png" alt="Java"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/javascript.png" alt="Javascript"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/mysql.png" alt="MySQL"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/postgre.png" alt="PostgreSQL"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/python.png" alt="Python"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/git.png" alt="Git"></div>
+            </section>
+            <!--referencia: https://krishnendu-addya-dev-portfolio.firebaseapp.com/ -->
 
-                    <!-- Bloque duplicado -->
-                    <div class="item"><img src="/webroot/media/tech/skills/css3.png" alt="CSS"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/html5.png" alt="HTML"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/java.png" alt="Java"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/javascript.png" alt="Javascript"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/mysql.png" alt="MySQL"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/postgre.png" alt="PostgreSQL"></div>
-                    <div class="item"><img src="/webroot/media/tech/skills/python.png" alt="Python"></div>
-                </div>
-
-
-                <h2>Herramientas</h2>
-                <div class="carousel carousel-right">
-                    <!-- Segundo carrusel diferente contenido -->
-                    <div class="item"><img src="/webroot/media/tech/tools/docker.png" alt="Docker"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/netbeans.png" alt="NetBeans"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/VSCode.png" alt="Visual Studio Code"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/eclipse.png" alt="Eclipse IDE"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/windows.png" alt="Windows"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/linux.png" alt="Linux"></div>
-
-                    <!-- Bloque duplicado -->
-                    <div class="item"><img src="/webroot/media/tech/tools/docker.png" alt="Docker"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/netbeans.png" alt="NetBeans"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/VSCode.png" alt="Visual Studio Code"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/eclipse.png" alt="Eclipse IDE"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/windows.png" alt="Windows"></div>
-                    <div class="item"><img src="/webroot/media/tech/tools/linux.png" alt="Linux"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--referencia: https://krishnendu-addya-dev-portfolio.firebaseapp.com/ -->
-
-
-        <section id="proyectos" class="projects" tabindex="-1">
-            <h2>Proyectos recientes</h2>
-            <div class="project-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-container">
-                    <img src="webroot/media/proyectos/portfolio.png" alt="Captura del portfolio personal"
-                        class="project-image">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/irenerodrod/Portfolio" target="_blank"
-                                rel="noopener noreferrer">Portfolio</a></h3>
-                        <p>Un portfolio personal que muestra mis proyectos y habilidades.</p>
+            <section id="proyectos" class="projects" tabindex="-1">
+                <h2>Proyectos recientes</h2>
+                <div class="project-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/portfolio.png" alt="Captura del portfolio personal"
+                            class="project-image">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodrod/Portfolio" target="_blank"
+                                    rel="noopener noreferrer">Portfolio</a></h3>
+                            <p>Un portfolio personal que muestra mis proyectos y habilidades.</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/passgen.png" alt="Captura del generador de contraseñas"
+                            class="project-image">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodrod/PassGen" target="_blank"
+                                    rel="noopener noreferrer">PassGen</a></h3>
+                            <p>Una herramienta para generar contraseñas seguras.</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="Próximamente" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodriguezrod/116LMSGIProyectoDAW" target="_blank"
+                                    rel="noopener noreferrer"> CFGS DAW - 116LMSGIProyectoDAW</a></h3>
+                            <p>Proyecto de la web del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones
+                                Web.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="Próximamente" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="https://github.com/irenerodriguezrod/116LMSGIProyectoLMSGI" target="_blank"
+                                    rel="noopener noreferrer"> CFGS DAW - 116LMSGIProyectoLMSGI</a></h3>
+                            <p>Proyecto de la web de la asignatura de Lenguajes de Marcas y Sistemas de Gestion de
+                                Información.</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 5 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="PROXIMAMENTE" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="#" target="_blank" rel="noopener noreferrer">Próximamente</a></h3>
+                            <p>Proximamente...</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 6 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="PROXIMAMENTE" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="#" target="_blank" rel="noopener noreferrer">Próximamente</a></h3>
+                            <p>Proximamente...</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 7 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="PROXIMAMENTE" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="#" target="_blank" rel="noopener noreferrer">Próximamente</a></h3>
+                            <p>Proximamente...</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 8 -->
+                    <div class="project-container">
+                        <img src="webroot/media/proyectos/proximamente.png" alt="PROXIMAMENTE" class="project-image">
+                        <div class="project-info">
+                            <h3><a href="#" target="_blank" rel="noopener noreferrer">Próximamente</a></h3>
+                            <p>Proximamente...</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Proyecto 2 -->
-                <div class="project-container">
-                    <img src="webroot/media/proyectos/passgen.png" alt="Captura del generador de contraseñas"
-                        class="project-image">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/irenerodrod/PassGen" target="_blank"
-                                rel="noopener noreferrer">PassGen</a></h3>
-                        <p>Una herramienta para generar contraseñas seguras.</p>
-                    </div>
-                </div>
-                <div class="project-container">
-                    <img src="webroot/media/proyectos/proximamente.png" alt="Próximamente" class="project-image">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/irenerodriguezrod/116LMSGIProyectoDAW" target="_blank"
-                                rel="noopener noreferrer"> CFGS DAW - 116LMSGIProyectoDAW</a></h3>
-                        <p>Proyecto de la web del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-container">
-                    <img src="webroot/media/proyectos/proximamente.png" alt="Próximamente" class="project-image">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/irenerodriguezrod/116LMSGIProyectoLMSGI" target="_blank"
-                                rel="noopener noreferrer"> CFGS DAW - 116LMSGIProyectoLMSGI</a></h3>
-                        <p>Proyecto de la web de la asignatura de Lenguajes de Marcas y Sistemas de Gestion de
-                            Información.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="contact" tabindex="-1">
-            <h2>Contacto</h2>
-            <p>Si tienes alguna duda o quieres contactarme, no dudes en ponerte en contacto conmigo.</p>
-            <ul>
-                <li><a href="mailto:rodrodirene3124@gmail.com">Correo electrónico</a></li>
-                <li><a href="tel:+34609818876">Teléfono</a></li>
-            </ul>
-        </section>
+            </section>
     </main>
 
     <footer>
-        <p>© 2025 Irene Rodríguez. Todos los derechos reservados.</p>
+        <p>© 2024 - 2025 Irene Rodríguez. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="scripts.js" defer></script>
 </body>
 
 </html>
