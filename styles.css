@@ -21,7 +21,7 @@ html {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     /* Ajusta el ancho*/
     margin: 0 auto;
     /* Centra horizontalmente */
@@ -478,14 +478,14 @@ footer p {
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
-        padding-right: 0;
         align-items: center;
+        gap: 10px;
     }
 
     .about-content {
         flex-direction: column;
-        padding-left: 0;
         text-align: center;
+        padding: 0 10px;
     }
 
     .profile-section {
@@ -494,16 +494,19 @@ footer p {
 
     .profile-img {
         width: 100px;
-        height: 100px;
+        height: auto;
+        border-radius: 50%;
     }
 
     .estudios-formaciones ul li {
+        text-align: center;
         padding-left: 0;
     }
 
     .project-grid {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .technologies,
@@ -513,55 +516,64 @@ footer p {
 
     .contact ul {
         flex-direction: column;
+        align-items: center;
     }
 }
 
 /* Responsive para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
     header nav ul {
-        justify-content: center;
-        padding-right: 0;
-        gap: 15px;
+        justify-content: space-around;
+        gap: 20px;
     }
 
     .about-content {
         flex-direction: column;
-        padding-left: 0;
         text-align: center;
+        padding: 0 20px;
     }
 
     .profile-section {
-        max-width: 130px;
+        max-width: 150px;
     }
 
     .profile-img {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
     }
 
     .estudios-formaciones ul li {
+        text-align: center;
         padding-left: 0;
     }
 
     .project-grid {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
     }
 
     .technologies,
     .estudios-formaciones {
-        padding: 15px;
+        padding: 20px;
+    }
+
+    .contact ul {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
-/* Responsive para televisores o pantallas grandes */
+/* Responsive para pantallas grandes */
 @media (min-width: 1440px) {
     .about-content {
-        padding-left: 30em;
+        padding: 0 15%;
     }
 
-    .estudios-formaciones ul li {
-        padding-left: 25em;
+    .profile-img {
+        width: 200px;
+        height: auto;
     }
 
     .project-grid {
@@ -569,11 +581,11 @@ footer p {
     }
 
     .tech-used img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: auto;
     }
 
     .contact p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
