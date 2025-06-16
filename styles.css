@@ -21,7 +21,7 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     /* Ajusta el ancho*/
     margin: 0 auto;
     /* Centra horizontalmente */
@@ -111,8 +111,10 @@ section {
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
 }
 
 .social-links {
@@ -471,7 +473,6 @@ footer p {
     -webkit-user-select: none; /* Evita que se seleccione texto por accidente */
     font-weight: bold;
 }
-
 /* Responsive para móviles */
 @media (max-width: 600px) {
     header nav ul {
