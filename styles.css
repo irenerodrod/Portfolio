@@ -369,6 +369,10 @@ header {
     opacity: 0;
     z-index: 1;
     animation: spin 5s linear infinite;
+    pointer-events: none;
+    /*para que no bloquee los enlaces de cv del logo, ya que esto hace que el position absolute 
+    no quede por encima de los demas elementos, es de ahi el fallo de que no funcionasen los links*/
+
 }
 
 .project-container:hover::before {
