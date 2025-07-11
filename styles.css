@@ -189,6 +189,10 @@ header {
 }
 
 /* Tabla de estudios */
+.estudios-formaciones h2 {
+    text-align: center;
+}
+
 .estudios-formaciones table {
     width: 100%;
     border-collapse: collapse;
@@ -211,6 +215,10 @@ header {
 
 .estudios-formaciones tbody tr:hover {
     background-color: #e9ecef;
+}
+
+.tecnologiaHerramientas h2 {
+    text-align: center !important;
 }
 
 /* Slider de tecnologías */
@@ -418,7 +426,7 @@ footer p {
     }
 
     header nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
